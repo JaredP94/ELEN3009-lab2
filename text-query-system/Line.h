@@ -3,6 +3,7 @@
 
 #include "Word.h"
 #include <string>
+#include <vector>
 using namespace std;
 
 class Line
@@ -16,7 +17,8 @@ public:
 	bool contains(const Word& search_word) const;
 
 private:		
-
+	vector<Word> line_of_words;
+	void split(vector<Word>& vec, const string& input, const string& separators, bool remove_empty);
 };
 
 #endif
