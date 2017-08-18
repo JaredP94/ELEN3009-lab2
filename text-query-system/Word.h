@@ -2,6 +2,7 @@
 #define WORD_H
 
 #include <string>
+#include <algorithm>
 using namespace std;
 
 // empty classes to represent different exceptions
@@ -25,6 +26,9 @@ public:
 
 private:	
 	string _word;	
+	Word lower_case(const string& entered_word) const;
+	string remove_punc() const;
+	bool space_check() const;
 };
 
 #endif

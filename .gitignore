@@ -37,3 +37,4 @@ Makefile
 *.mk
 *.project
 factorial/factorial.txt
+text-query-system/text-query-system.txt
