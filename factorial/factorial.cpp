@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
 
-int factorial(int number) { return number <= 1 ? number : factorial(number - 1) * number; }
+int factorial(int number) { return number > 1 ? factorial(number - 1) * number : 1; }
 
 TEST_CASE("testing the factorial function") {
     CHECK(factorial(0) == 1);
