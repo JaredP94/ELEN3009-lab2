@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+Lab2.workspace
+Makefile
+*.db
+*.tags
+*.mk
+*.project
+factorial/factorial.txt
+text-query-system/text-query-system.txt
+text-query-system/Debug/alice.txt
+*.session
